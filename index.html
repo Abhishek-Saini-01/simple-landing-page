@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!--  -->
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <link rel="stylesheet"  href="style.css">
+    <title>HEROS</title>
+
+</head>
+<body>
+    <section>
+        <header>
+            <a href="#" class="HEROS">HEROES</a>
+            <div class="toggle" onclick="toggleMenu();"></div>
+            <ul class="navigation">
+                <li><a href="#"></a>Home</li>
+                <li><a href="#"></a>Characters</li>
+                <li><a href="#"></a>Movies</li>
+                <li><a href="#"></a>Games</li>
+                <li><a href="#"></a>More</li>
+            </ul>
+        </header>
+
+        <div class="container">
+            <div class="box">
+                <div class="imgBx">
+                    <img src="img1.jpg" alt="">
+                </div>
+            </div>
+            <div class="box">
+                <div class="imgBx">
+                    <img src="img2.jpg" alt="">
+                </div>
+            </div>
+            <div class="box">
+                <div class="imgBx">
+                    <img src="img3.jpg" alt="">
+                </div>
+            </div>
+            <div class="box">
+                <div class="imgBx">
+                    <img src="img4.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+<script>
+    let imgBx = document.querySelectorAll('.imgBx');
+    imgBx.forEach(popup => popup.addEventListener('click', () =>{
+        popup.classList.toggle('active');
+        
+
+    }))
+
+
+
+
+
+    function toggleMenu() {
+        const menuToggle = document.querySelector('.toggle');
+        const navigation = document.querySelector('.navigation');
+        menuToggle.classList.toggle('active');
+        navigation.classList.toggle('active');
+       
+
+    }
+
+</script>
+</body>
+</html>
